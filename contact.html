@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | HR Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">HR Consulting</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Let's start a conversation about your HR needs</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Whether you have a specific project in mind, need ongoing HR support, or just want to explore how I can help your organization, I'd love to hear from you.</p>
+
+                    <h3>What to Expect</h3>
+                    <ul class="process-list">
+                        <li><strong>Initial Consultation:</strong> We'll discuss your needs and challenges (complimentary, no obligation)</li>
+                        <li><strong>Custom Proposal:</strong> I'll develop a tailored approach and scope of work</li>
+                        <li><strong>Engagement:</strong> We'll work together to achieve your HR objectives</li>
+                    </ul>
+
+                    <div class="contact-details">
+                        <h3>Other Ways to Connect</h3>
+                        <p><strong>Email:</strong> info@hrconsulting.com</p>
+                        <p><strong>Phone:</strong> Available upon request</p>
+                        <p><strong>Response Time:</strong> I typically respond within 24 hours</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Area of Interest</label>
+                            <select id="service" name="service">
+                                <option value="">Please select...</option>
+                                <option value="strategy">HR Strategy & Planning</option>
+                                <option value="talent">Talent Acquisition & Management</option>
+                                <option value="compensation">Compensation & Benefits</option>
+                                <option value="relations">Employee Relations & Engagement</option>
+                                <option value="compliance">HR Compliance & Policy</option>
+                                <option value="change">Organizational Development & Change</option>
+                                <option value="interim">Interim HR Leadership</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell me about your organization and what you're looking to accomplish..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 HR Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // In a real implementation, you would send this data to a server
+            // For now, we'll just show a confirmation message
+            alert('Thank you for your message! I will get back to you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
