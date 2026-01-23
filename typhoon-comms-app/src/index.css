@@ -1,9 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-@layer base {
-  body {
-    @apply bg-light-gray text-gray-900 font-sans;
-  }
+@theme {
+  --color-raf-blue: #5D8AA8;
+  --color-typhoon-gray: #6B7280;
+  --color-deep-navy: #1E3A8A;
+  --color-light-gray: #F3F4F6;
 }
